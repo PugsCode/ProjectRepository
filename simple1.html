@@ -1,0 +1,146 @@
+<html>
+
+<head>
+<title>М'яч</title>
+<style>
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage {
+  position: relative;
+  background: #000000;
+  width: 5000px;
+  height: 900px;
+}
+
+.bouncer-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.bouncer-holder {
+-webkit-animation: travel 3s ease-in infinite alternate;
+    -o-animation:  travel 3s ease-in infinite alternate;
+    animation:  travel 3s ease-in infinite alternate;
+}
+
+.bouncer {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background: #E3287D;
+  background: -webkit-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: -moz-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: -o-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: -ms-radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+  background: radial-gradient(60% 40%, circle, rgba(255,255,255,0.8), #E3287D 50%) #E3287D;
+-webkit-animation: bounce 3.5s infinite;
+    -o-animation:  bounce 3.5s infinite;
+    animation:  bounce 3.5s infinite;
+}
+
+ @-webkit-keyframes travel {
+   from { left: 0; }
+     to   { left: calc(100% - 30px)}
+  }
+  
+  @keyframes travel {
+     from { left: 0; }
+     to   { left: calc(100% - 30px)}
+  }
+  
+  @-webkit-keyframes bounce {
+    from, to  {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: 220px;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
+  @keyframes bounce {
+    from, to  {
+      bottom: 0;
+      animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: calc(100% - 30px);
+      animation-timing-function: ease-in;
+    }
+  }
+
+
+
+button{
+background-color: red;
+border: 2px solid black;
+border-radius: 20%;
+}
+
+a{
+text-decoration:none;
+
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+<div class="stage">
+  <div class="bouncer-holder">
+    <div class="bouncer"></div>
+  </div>
+</div>
+
+
+
+
+<button><a href="Final.html">Return</a></button>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
